@@ -34,8 +34,6 @@ To compile the client and server programs, ensure you have gcc and OpenSSL devel
 gcc -o client client.c -lssl -lcrypto
 gcc -o server server.c -lssl -lcrypto
 
-```bash
 ./server 12345
 
-```bash
 ./client localhost 12345
