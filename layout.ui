@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkWindow" id="window">
+    <property name="title">Chat</property>
+    <property name="default-width">600</property>
+    <property name="default-height">400</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="vexpand">true</property>
+            <child>
+              <object class="GtkTextView" id="transcript">
+                <property name="editable">false</property>
+                <property name="wrap-mode">word</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="message"/>
+        </child>
+        <child>
+          <object class="GtkButton" id="send">
+            <property name="label">Send</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
+
+
+
+
